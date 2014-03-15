@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="assets/scripts/createjs.js"></script>
+    <script src="assets/scripts/custom.js"></script>
+    <script src="http://jsonip.appspot.com/?callback=DisplayIP"></script>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+	<style>
+		body {
+			background-color: #fff;
+		}
+		#crazy-crows-canvas {
+			margin: 0 auto;
+			background: none;
+			display: block;
+		}
+
+		#loading-img, #progress {
+			position: absolute;
+			left: 617px;
+			top: 230px;
+		}
+
+		#progress {
+			top: 323px;
+			left: 740px;
+			font-weight: bold;
+			display: block;
+			font-size: 30px;
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+    <canvas id="crazy-crows-canvas" width="1024" height="768">
+        Your device is not supporting Canvas.
+    </canvas>
+    	<img src="assets/images/loading.gif" alt="Loading..." id="loading-img">
+    	<h4 id="progress"></h4>
+    
+</body>
+</html>
